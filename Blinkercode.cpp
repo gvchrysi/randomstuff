@@ -2,6 +2,8 @@
 
 int myFunction(int, int);
 
+int x = 0; 
+
 void setup(){
     int result = myFunction(2, 3);
 
@@ -16,9 +18,9 @@ void loop(){
     digitalWrite(LED_BUILTIN, HIGH);
 
     
-
+    int y = x + 10;
     digitalWrite(12, LOW);
-    delay(10);
+    delay(y);
     digitalWrite(12, HIGH);
-    delay(10);
+    delay(y);
 }
